@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A7F79A3-C4CC-4683-A92F-A7B42643C982}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JogoDaVelha_PC</RootNamespace>
+    <AssemblyName>JogoDaVelha_PC</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Vencedor_Control.cs" />
+    <Compile Include="Views\frm_inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frm_inicial.Designer.cs">
+      <DependentUpon>frm_inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\frm_MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frm_MenuPrincipal.Designer.cs">
+      <DependentUpon>frm_MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frm_notificacao_Vencedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frm_notificacao_Vencedor.Designer.cs">
+      <DependentUpon>frm_notificacao_Vencedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frm_notofocacao_JogoEmpatado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frm_notofocacao_JogoEmpatado.Designer.cs">
+      <DependentUpon>frm_notofocacao_JogoEmpatado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frm_teclado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frm_teclado.Designer.cs">
+      <DependentUpon>frm_teclado.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\frm_inicial.resx">
+      <DependentUpon>frm_inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frm_MenuPrincipal.resx">
+      <DependentUpon>frm_MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frm_notificacao_Vencedor.resx">
+      <DependentUpon>frm_notificacao_Vencedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frm_notofocacao_JogoEmpatado.resx">
+      <DependentUpon>frm_notofocacao_JogoEmpatado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frm_teclado.resx">
+      <DependentUpon>frm_teclado.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trofel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundoIMG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuariosGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <None Include="Resources\trofel.png" />
+    <None Include="Resources\Pato.wav" />
+    <None Include="Resources\SonAcertou1.wav" />
+    <None Include="Resources\SonAcertou.wav" />
+    <None Include="Resources\FundoJogoDaVelha.wav" />
+    <None Include="Resources\Música infantil-entretenimento-diversão sem direitos autorais%4069 - Trilha de_256k.mp3" />
+    <None Include="Resources\musicaDeFundo.bmp" />
+    <None Include="Resources\teclado.png" />
+    <None Include="Resources\iconeJogoDaVelha.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JogoDaVelha_PC", "JogoDaVelha_PC.csproj", "{0A7F79A3-C4CC-4683-A92F-A7B42643C982}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "JogoDaJelha_Instalador", "..\..\..\..\..\Instaladores\Jogos\JogoDaJelha_Instalador.vdproj", "{A59FB069-C945-4145-9647-C9FC517F0297}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A7F79A3-C4CC-4683-A92F-A7B42643C982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A7F79A3-C4CC-4683-A92F-A7B42643C982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A7F79A3-C4CC-4683-A92F-A7B42643C982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A7F79A3-C4CC-4683-A92F-A7B42643C982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A59FB069-C945-4145-9647-C9FC517F0297}.Debug|Any CPU.ActiveCfg = Debug
+		{A59FB069-C945-4145-9647-C9FC517F0297}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3F00214-33CD-4A72-96E2-886A39F6A593}
+	EndGlobalSection
+EndGlobal
